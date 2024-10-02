@@ -1,0 +1,5 @@
+import pandas as pd 
+
+DATA_PATH = "/content/drive/MyDrive/Colab Notebooks/2024-2025/Imbank/dataset/"
+
+DATA_PATH + "ss_ex_1.xlsx"
