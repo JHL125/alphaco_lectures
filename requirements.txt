@@ -1,9 +1,16 @@
 numpy
 pandas
 matplotlib
+openpyxl
 seaborn
 scipy
 scikit-learn
 jupyterlab
-openpyxl
 plotly
+yfinance
+streamlit
+pingouin
+statsmodels
+scipy
+mysql-connector-python
+pymysql
