@@ -206,6 +206,7 @@ ORDER BY avgQuantity DESC
 -- 매출 Top5 국가 및 매출
 -- 국가별 매출 
 CREATE TABLE classicmodels.stat AS
+use classicmodels;
 SELECT 
 	C.country
     , SUM(B.priceEach * B.quantityOrdered) AS sales
@@ -220,7 +221,7 @@ ORDER BY 2 DESC
 ;
 
 -- RANK 윈도우 함수 적용
-CREATE TABLE classicmodels.stat_rnk AS
+-- CREATE TABLE classicmodels.stat_rnk AS
 SELECT 
 	country 
     , SALES
@@ -237,6 +238,7 @@ SELECT * FROM stat_rnk WHERE RNK BETWEEN 1 AND 5;
 -- productname sales 
 --   1952 ~~~    78860.11
 USE classicmodels;
+SELECT * FROM product_sales;
 DROP TABLE product_sales;
 CREATE TABLE classicmodels.product_sales AS
 SELECT 
@@ -265,6 +267,7 @@ LIMIT 5
 
 -- Churn Rate(%) 구하기
 -- 이 테이블의 마지막 구매일 확인
+select*from orders;
 SELECT MAX(orderdate) AS mx_order
 FROM orders
 ;

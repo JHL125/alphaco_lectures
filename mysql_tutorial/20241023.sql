@@ -405,5 +405,6 @@ GROUP BY 1
 ORDER BY 1
 ;
 
-sample_df = customer_df_2023.groupby(['기준년월', '연령대', '성별', '고객등급', '자택_시도', '자택_시군구'], group_keys=False).apply(lambda x: x.sample(frac=0.01))
+sample_df = 
+	customer_df_2023.groupby(['기준년월', '연령대', '성별', '고객등급', '자택_시도', '자택_시군구'], group_keys=False).apply(lambda x: x.sample(frac=0.01))
 sample_df.shape
